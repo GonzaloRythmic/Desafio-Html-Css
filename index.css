@@ -13,34 +13,52 @@ body{
     background: url(puntitos.png);
 }
 
-
-
-
-
-.header-superior{
-    width: 36px;
-    height: 32px;
+.contenedor-logo-menu{
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px auto;
-    margin-right: 8%;
+    
 }
 
-@media(min-width: 668px){
-    .header-superior{
+
+.contenedor-logo-menu-2{
     width: 100%;
-    height: 28px;
-    flex-direction: row;
-    margin: 62px auto;
-    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo-gonzalo-1{
+    width: 70px;
+    height: 70px;
+}
+
+@media(min-width:668px){
+    .burger{
+        display: none;
     }
+}
+
+.contenedor-menu-letras-imagen{
+    display: none;
+}
+
+@media(min-width:668px){
+    .contenedor-menu-letras-imagen{
+        width: 100%;
+        height: 70px;
+        flex-direction:row-reverse;
+        justify-content: space-between;
+        }
 }
 
 .menu-letras{
     display: none;
 }
-
+.subcontenedor-menu-letras{
+    display: none;
+}
 @media(min-width:668px){
     .menu-letras{
         font-family: "Roboto";
@@ -48,13 +66,18 @@ body{
         font-weight: bold;
         font-size: 24px
     }
-
-    .contenedor-menu-letras{
-        width: 100%;
-       display: flex;
-       flex-direction: row-reverse;
+    
+    .subcontenedor-menu-letras{
+        width: 400px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 14px;
     }
+
 }
+
+
 
 .contenedor-titulo{
     display: flex;
@@ -67,10 +90,16 @@ body{
     justify-content: center;
     align-items: center;
 }
+@media(min-width:668px){
+.contenedor-titulo-imagen{
+    flex-direction:row;
+}
+}
 
 .contenedor-titulo{
     width: 291px;
     height: 96px;
+    margin-top: 20px;
 }
 
 .contenedor-imagen{
@@ -78,7 +107,7 @@ body{
     height: 300px;
     display: flex;
     justify-content: center;
-    margin-top: 58px;
+    margin-top: 120px;
 }
 
 .titulo{
@@ -94,12 +123,28 @@ body{
     margin-right: 200px;
 }
 
+@media (min-width:668px){
+    .barritas-menu{
+        display: none;
+    }
+}
+
+
+
 .section-1{
     width: 100%;
     height: 538px;
     background-color: black;
     display: flex;
     flex-direction: column;
+}
+@media(min-width:668px){
+    .section-1{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 15% 15%;
+    }
 }
 
 .contenedor-palabras-section-1{
@@ -150,12 +195,29 @@ body{
     width: 100px;
     margin: 0 auto;
 }
+@media(min-width:668px){
+    .nota-musical{
+        width: 211px;
+        height: 211px;
+        }
+}
+
+
+
 
 .section-2{
     width: 100%;
     height: 1375px;
     background-color: white;
 }
+@media(min-width:668px){
+    .section-2{
+        height: 604px;
+    }
+}
+
+
+
 
 .titulo-mis-servicios{
     font-family: "Open Sans";
@@ -165,10 +227,29 @@ body{
     text-align: center;
 }
 
+.contenedor-servicio{
+    width: 100%;
+}
+@media(min-width:668px){
+    .contenedor-servicio{
+        width: 100%;
+    }
+}
+
 .contenedor-de-servicios{
     display: flex;
     flex-direction: column;
+    width: 100%;
 
+}
+@media(min-width:668px){
+    .contenedor-de-servicios{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px auto;
+    }
 }
 
 .contenedor-imagen-emoji-musica{
@@ -200,6 +281,11 @@ body{
     width: 262px;
     height: 117px;
     margin: 50px auto;
+}
+@media(min-width:668px){
+    .contenedor-parrafo-sobre-mi{
+    margin: 140px auto;
+    }
 }
 
 .parrafo-sobre-mi{
@@ -258,7 +344,7 @@ body{
 }
 
 .contenedor-mis-pasatiempos{
-    width: 271px;
+    width: 100%;
     height: 117px;
     margin: 0px auto;
 }
@@ -268,6 +354,12 @@ body{
     font-size: 24px;
     color: black;
     text-align: center;
+    width: 100%;
+}
+@media(min-width:668px){
+    .titulo-mis-pasatiempos{
+        width: 100%;
+    }
 }
 
 .contenedor-parrafo-mis-pasatiempos{
@@ -287,12 +379,24 @@ body{
     width: 100%;
     height: 660px;
     background-color: black;
-    padding: 0px auto;
+    
+}
+
+@media(min-width:668px){
+    .contenedor-form{
+        display: flex;
+        width: 800px;
+        margin: 0px auto;
+    }
 }
 
 .contenedor-titulo-escribeme{
     display: flex;
     flex-direction: column;
+}
+@media(min-width:668px){
+    .contenedor-titulo-escribeme{
+    }
 }
 
 .titulo-escribeme{
@@ -351,11 +455,23 @@ body{
     align-items: center;
 }
 
+
+
+
 .section-4{
     width: 100%;
     height: 493px;
     background-color: #DBDBDB;
+    background: url(puntitos.png);
 }
+@media(min-width:668px){
+    .section-4{
+        height: 346px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 
 
 .logo-gonzalo{
@@ -370,4 +486,15 @@ body{
   grid-row: 3fr;
   gap: 30px;
   padding-left: 15px;
+}
+
+@media(min-width:668px){
+    .contenedor-imagen-section-4{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0px 10%
+        
+    }
 }
